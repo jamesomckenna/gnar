@@ -25,6 +25,8 @@
     }
 
     echo '<h1>hi tim</h1>';
+    echo '<h1>hi James</h1>';
+
     ?>
   </body>
 </html>
