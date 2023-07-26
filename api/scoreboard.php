@@ -1,11 +1,7 @@
 <?php 
 echo "hello world, this RUSS GNAR is the scoreboard API test<br><br>";
 
-$ip_address = "sql200.infinityfree.com";
-$username = "if0_34669910";
-$password = "msbLuXx5sWhwG1";
-$db_name = "if0_34669910_russ_gnar";
-$db_port = "3306";
+require('templates/db_conn.php');
 
 $mysqli = new mysqli($ip_address,$username,$password,$db_name);
 
@@ -25,9 +21,6 @@ if ($result = $mysqli -> query("SELECT * FROM `scoreboard`")) {
   while ($obj = $result -> fetch_object()) {
     echo json_encode($obj)."<br>";
   }
-  $result -> free_result();
-
-  // Free result set
   $result -> free_result();
 }
 
