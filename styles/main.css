@@ -1,0 +1,21 @@
+body {
+    background-color: #EEEEEE;
+    margin: 0;
+}
+
+h1 {
+    color: #FF0000;
+    margin-top: 0;
+}
+
+a {
+    text-transform: uppercase;
+}
+
+.shell {
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: #CCCCCC;
+    min-height: 100lvh;
+    padding: 24px
+}
