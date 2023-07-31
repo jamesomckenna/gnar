@@ -5,10 +5,9 @@ body {
 
 h1 {
     color: #F90215;
-    font-family: Helvetica; /*, Archivo-Black*/
     margin-top: 0;
     text-align: center;
-    
+    font-family: "Archivo Black", Helvetica; /**/
     font-size: 20;
 }
 
