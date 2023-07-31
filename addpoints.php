@@ -13,6 +13,11 @@
   </div>
 </body>
 
+<footer>
+    <a href="index.php">home</a> 
+    <a href="../">Back</a>
+    </footer>
+
 </html>
 
 russ!2023!gnar

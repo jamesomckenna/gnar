@@ -14,6 +14,7 @@
     <nav>
         <ur>
             <li><a href="#Runs">Runs</a></li>
+            
             <li><a href="#Tricks">Tricks</a></li>
             <li><a href="#ECPS">ECPS</a></li>
         </ur>
@@ -23,11 +24,8 @@
     </div>
 </body>
 
-</div>
-    <footer>
-
-    </footer>
-
-
-</html>
+<footer>
+    <a href="index.php">home</a> 
+    <a href="../">Back</a>
+</footer>
 
