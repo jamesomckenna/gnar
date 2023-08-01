@@ -14,7 +14,7 @@ if ($mysqli -> connect_errno) {
 }
 
 // Perform query
-if ($result = $mysqli -> query("SELECT * FROM `scoreboard`")) {
+if ($result = $mysqli -> query("SELECT * FROM `scoreboard_test`")) {
   echo "Num of rows returned: " . $result -> num_rows."<br><br>";
 
   echo "Rows: <br>";

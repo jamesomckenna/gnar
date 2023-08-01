@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>GNAR X RUSS<br>Gafney’s Numerical Assessment of Radness.</title>
+    <title>GNAR X RUSS - Gafney's Numerical Assessment of Radness.</title>
     <?php require('templates/header.php'); ?>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>

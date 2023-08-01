@@ -9,7 +9,7 @@
 <body>
   <div class="shell">
     <h1>Leaderboard</h1>
-    <a href="/">Back</a>
+    <a href="../">Back</a>
 
     <?php
     echo "<br><br>";
@@ -28,7 +28,7 @@
 </body>
 
 <footer>
-    <a href="index.php">home</a> 
+    <a href="index.php">Home</a> 
     <a href="../">Back</a>
 </footer>
 
