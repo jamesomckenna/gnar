@@ -11,6 +11,7 @@
     <div class="header">
       <h1>GNAR - Scoring</h1>
       <a href="../">Back</a>
+      <a href="index.php">Home</a> 
     </div>
 
     <div class="tab-header-container">
@@ -20,6 +21,7 @@
       <a class="tab-header" href="#deduction">Deductions</a>
       <a class="tab-header" href="#total">Total</a>
     </div>
+    
 
     <div class="tab-content-container">
       <div class="tab-content">

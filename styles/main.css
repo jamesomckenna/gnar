@@ -1,6 +1,6 @@
-* {
-    /* outline: 1px solid #00990044; */
-}
+/* * {
+    outline: 1px solid #00990044; 
+}*/
 
 body {
     background-color: #FFFFFF;
@@ -41,7 +41,13 @@ p {
 
 
 a {
+    color:#FFFFFF;
+    font-family: 'Francois One', sans-serif;
+    font-size: 24px;
     text-transform: uppercase;
+    text-decoration: none;
+    margin: auto;
+    border: 100px;
 }
 
 .shell {
@@ -61,7 +67,46 @@ a {
     font-size: 80px;
 }
 
+/******* UNIVERSAL *******/
+.uni-content-container {
+    border-radius: 25px;
+    filter: drop-shadow(0 4px 4px #b1b1b1);
+    margin: 40px auto;
+    column-gap: 67px;
 
+}
+
+/******* Index ******/
+.index-button-container {
+    padding: 36px 44px;
+    border: 10px solid #a1a1a1;
+    border-radius: 40px;
+}
+
+
+
+.nav-buttons-index {
+    font-family: 'Francois One', sans-serif;
+    font-size: 24px;
+    padding: 8px 37px;
+    background-color: #F36523;
+    border-radius: 25px;
+    filter: drop-shadow(0 4px 4px #b1b1b1);
+}
+#red {
+    background-color: #F21717;
+}
+
+#green {
+    background-color: #3AB64A;
+}
+#blue {
+    background-color: #1076BC;
+}
+#black {
+    background-color: #000;
+    opacity: .8;
+}
 /******* SCORING *******/
 
 .tab-header-container {

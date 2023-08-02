@@ -7,19 +7,17 @@
 <body>
     <div class ="shell">
         <h1>List of points</h1>
-        <nav>
-            <ur>
-                <li><a href="#Runs">Runs</a></li>
-                <li><a href="#Tricks">Tricks</a></li>
-                <li><a href="#ECPS">ECPS</a></li>
-            </ur>
-        </nav>
-        <a href="../">Back</a>
-
+        <div class="tab-header-container">
+            <a class="tab-header" href="#runs">Runs</a>
+            <a class="tab-header" href="#tricks">Tricks</a>
+            <a class="tab-header" href="#ecp">ECP's</a>
+            <a class="tab-header" href="#deduction">Deductions</a>
     </div>
+    <div></div>
 </body>
 <footer>
-
+        <a href="../">Back</a>
+        <a href="index.php">Home</a> 
 </footer>
 
 
