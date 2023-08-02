@@ -37,7 +37,7 @@
         Technically youve done top of Wombats Ramble, Drovers Dream and Highway 83. Only Highway 83 would score points! </li><br> 
         <li>Example 2. <br>You're bombing it down last hoot and dont want to stack it on the mogul's at the bottom so you duck onto Wombats Ramble.
         Even though you've done both Wombats Ramble and Last Hoot only last hoot would score points!!</li></ul>
-      Please check the full list of runs that can score you points: <strong><a href="pointslist.php">here</a></strong><br><br>
+      Please check the full list of runs that can score you points: <a href="pointslist.php">here</a><br><br>
       <img src="images\Map_1.PNG" alt="Map of Drovers & Hwy 83"width="360" height="360">
       <img src="images/Map 2.PNG" alt="Map of Wombats Ramble & Last Hoot"width="360" height="360"></p>
 
@@ -60,7 +60,7 @@
       <p>
         Of all the methods ECPS provide the MOST points!!! 
         Some ECPS such as First Chair, Saftey Test and The TJ can only be done once a day. 
-        Others such as Happy Chair, Pro Callout and The Rizzler can be attempted as many times as you can!!
+        Others such as Happy Chair, Pro Callout and The Rizzler can be attempted as many times as you can!! 
         <br>The list of ECP's can be found <strong><a href="pointslist.php">here</a></strong> 
         Read the challages and scheme cunningly!!
         <br>Please see bigbird for any clarification regarding ECP's
