@@ -16,10 +16,10 @@
         </div>
         <div class="uni-container">
             <div class="uni-filter">
-            <a class="score-filter-option" id="orange" href="#all">All</a>
-            <a class="score-filter-option" id="green" href="#beginner">Beginner</a>
-            <a class="score-filter-option" id="blue" href="#intermediate">Intermediate</a>
-            <a class="score-filter-option" id="black" href="#expert">Expert</a>
+            <a class="score-filter-option orange"  href="#all">All</a>
+            <a class="score-filter-option green"  href="#beginner">Beginner</a>
+            <a class="score-filter-option blue"  href="#intermediate">Intermediate</a>
+            <a class="score-filter-option black"  href="#expert">Expert</a>
             <!-- <a class="score-filter-option" id="red" href="#extreme">Extreme</a> -->
             </div>
         </div>

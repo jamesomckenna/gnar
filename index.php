@@ -13,20 +13,20 @@
     </head>
     <body class="shell">
         <div class="header">
-          <a href="index.php"><img scr="images/Russ_red_logo.png" alt="Russ logo home" height=100px width=100px></a>
+          <a href="index.php"><img src="images/Russ_red_logo.png" alt="Russ logo home" height=100px width=100px></a>
           <h1>GNAR X RUSS</h1>
         </div>
 
         <div class="index-button-container">
               <div class="nav-button">
                 
-                <a  class="nav-buttons-index" id="orange" href="howtoplay.php">How to play</a>
+                <a  class="nav-buttons-index orange"  href="howtoplay.php">How to play</a>
                 
-                <a class="nav-buttons-index" id="green" href="leaderboard.php">Leaderboard</a>
+                <a class="nav-buttons-index green"  href="leaderboard.php">Leaderboard</a>
                 
-                <a class="nav-buttons-index" id="blue" href="pointslist.php">Points Table</a>
+                <a class="nav-buttons-index blue"  href="pointslist.php">Points Table</a>
                 
-                <a class="nav-buttons-index" id="red" href="addpoints.php">Add Points</a>
+                <a class="nav-buttons-index red"  href="addpoints.php">Add Points</a>
                 
                   <!-- <a h`ref="signin.php">Sign In</a> -->
               </div>
