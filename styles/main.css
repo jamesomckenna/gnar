@@ -4,8 +4,10 @@
         margin: 0 auto;
         background-color: #ffffff;
         min-height: 100lvh;
-        padding: 24px
+        padding: 24px;
+        overflow-x: scroll;
     }
+
     h3 {
         color: #000;
         font-family: 'Archivo Black', sans-serif;
@@ -45,6 +47,7 @@
     .logo{
         position: absolute;
     }
+
     /******* Universal *******/
     .uni-container{
         padding: 36px 44px;
@@ -59,20 +62,19 @@
         margin-bottom: 60px;
     }
     .orange{
-        background-color: #F36523
+        background-color: #F36523 !important;
     }
     .red {
-        background-color: #F21717;
+        background-color: #F21717 !important;
     }
     .green {
-        background-color: #3AB64A;
+        background-color: #3AB64A !important;
     }
     .blue {
-        background-color: #1076BC;
+        background-color: #1076BC !important;
     }
     .black {
-        background-color: #000;
-        opacity: .8;
+        background-color: #333333 !important;
     }
   
     /******* Index ******/
@@ -99,13 +101,18 @@
         
         /* margin-bottom: 800px; */
     }
+
+
+
     /******* SCORING *******/
     
     .tab-header-container {
         display: flex;
-        justify-content: center;
-        column-gap: 67px;
+        column-gap: 60px;
+        overflow-x: scroll;
+        margin: 0 auto;
     }
+
     .tab-header-container a {
         color: #000;
         opacity: 0.7;
@@ -131,7 +138,8 @@
     .score-filter {
         display: flex;
         column-gap: 26px;
-        margin-bottom: 60px;
+        padding-bottom: 60px;
+        overflow-x: scroll;
     }
     
     .score-filter-option {
@@ -146,15 +154,47 @@
     .score-list {
         display: flex;
         flex-wrap: wrap;
+        row-gap: 18px;
     }
     
     .score-row {
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
         font-family: 'Archivo Black', sans-serif;
         font-size: 24px;
         column-gap: 20px;
+        align-items: center;
+        justify-content: flex-end;
     }
+
+    .run-checkbox {
+        margin-right: auto;
+    }
+
+    .run-counter {
+        white-space: nowrap;
+    }
+
+    a.counter-btn {
+        display: inline-block;
+        color: #000;
+        background: #D9D9D9;
+        border-radius: 50px;
+        padding: 3px 15px;
+    }
+
+    .counter-value {
+        display: inline-block;
+        border-radius: 10px;
+        border: 2px solid #AAAAAA;
+        background: #F2F2F2;
+        width: 32px;
+        padding: 3px;
+        text-align: center;
+    }
+
+
 
     /******* How to play *******/
 

@@ -12,4 +12,4 @@
 <link rel="stylesheet" href="styles/main.css" />
 
 <link rel="stylesheet" href="styles/main.css"/>
-<script src="js/main.js" async></script>
+<script src="scripts/main.js" async></script>
