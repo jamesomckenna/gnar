@@ -9,8 +9,10 @@
 <body>
   <div class="shell">
     <div class="header">
+      <a href="index.php"><img scr="images/Russ_red_logo.png" alt="Russ logo home" height=100px width=100px></a>
       <h1>GNAR - Scoring</h1>
       <a href="../">Back</a>
+      <a href="index.php">Home</a> 
     </div>
 
     <div class="tab-header-container">
@@ -20,14 +22,16 @@
       <a class="tab-header" href="#deduction">Deductions</a>
       <a class="tab-header" href="#total">Total</a>
     </div>
+    
 
     <div class="tab-content-container">
       <div class="tab-content">
         <div class="score-filter">
-          <a class="score-filter-option" href="#all">All</a>
-          <a class="score-filter-option" href="#beginner">Beginner</a>
-          <a class="score-filter-option" href="#intermediate">Intermediate</a>
-          <a class="score-filter-option" href="#expert">Expert</a>
+          <a class="score-filter-option" id="orange" href="#all">All</a>
+          <a class="score-filter-option" id="green" href="#beginner">Beginner</a>
+          <a class="score-filter-option" id="blue" href="#intermediate">Intermediate</a>
+          <a class="score-filter-option" id="black" href="#expert">Expert</a>
+          <!-- <a class="score-filter-option" id="red" href="#extreme">Extreme</a> -->
         </div>
         <div class="score-list">
           <div class="score-row">
@@ -52,6 +56,10 @@
       </div>
     </div>
   </div>
+
+  <footer>
+
+  </footer>
 </body>
 
 </html>
