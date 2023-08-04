@@ -1,6 +1,7 @@
 window.addEventListener("load", (event) => {
     console.log('Load Complete');
 
+    /******* SCORING *******/
 
     // get every score row element
     var score_rows = document.getElementsByClassName("score-row");
@@ -14,6 +15,7 @@ window.addEventListener("load", (event) => {
 
         // increase counter
         counter_add.addEventListener("click", (event) => {
+            event.preventDefault();
             if(counter_value.dataset.value >= 99){
                 return
             }
@@ -23,6 +25,7 @@ window.addEventListener("load", (event) => {
 
         // decrease counter
         counter_sub.addEventListener("click", (event) => {
+            event.preventDefault();
             if(counter_value.dataset.value <= 0){
                 return
             }

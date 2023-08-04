@@ -3,9 +3,10 @@
         max-width: 1024px;
         margin: 0 auto;
         background-color: #ffffff;
+        color: #000000;
         min-height: 100lvh;
         padding: 24px;
-        overflow-x: scroll;
+        overflow-x: auto;
     }
 
     h3 {
@@ -25,13 +26,11 @@
     
     
     a {
-        color:#FFFFFF;
+        color:#000000;
         font-family: 'Francois One', sans-serif;
         font-size: 24px;
         text-transform: uppercase;
         text-decoration: none;
-        margin: auto;
-        border: 100px;
     }
     
     
@@ -86,11 +85,13 @@
     }
     
     .nav-buttons-index {
+        color: #ffffff;
         font-family: 'Francois One', sans-serif;
         font-size: 24px;
         padding: 8px 37px;
         border-radius: 25px;
         filter: drop-shadow(0 4px 4px #b1b1b1);
+        margin: 0 auto;
     }
 
     .nav-button{
@@ -106,49 +107,100 @@
 
     /******* SCORING *******/
     
-    .tab-header-container {
+    .cat-tab-container {
+        position: relative;
         display: flex;
         column-gap: 60px;
-        overflow-x: scroll;
-        margin: 0 auto;
+        overflow-x: auto;
+        margin: 0 auto 30px;
     }
 
-    .tab-header-container a {
-        color: #000;
-        opacity: 0.7;
+    .cat-tab-container:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #999999;
     }
 
-    .tab-content-container a {
-        text-decoration: none;
-        color: #FFFFFF;
-    }
-    
-    .tab-header {
+    .cat-tab {
+        position: relative;
+        color: #4d4d4d;
         font-family: 'Archivo Black', sans-serif;
         font-size: 36px;
-        padding: 24px 0;
+        padding: 18px 0;
+    }
+
+    .cat-tab.active:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: #000;
     }
     
-    .tab-content {
-        padding: 36px 44px;
+    .cat-content {
+        padding: 36px 34px;
         border: 10px solid #a1a1a1;
         border-radius: 40px;
     }
     
     .score-filter {
         display: flex;
-        column-gap: 26px;
-        padding-bottom: 60px;
-        overflow-x: scroll;
+        justify-content: center;
+        column-gap: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 50px;
+        overflow-x: auto;
     }
     
     .score-filter-option {
         font-family: 'Francois One', sans-serif;
         font-size: 24px;
         padding: 8px 37px;
+        color: #ffffff;
         background-color: #F36523;
         border-radius: 25px;
         filter: drop-shadow(0 4px 4px #b1b1b1);
+    }
+
+    .trick-filter {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        overflow-x: auto;
+    }
+
+    .trick-filter:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #999999;
+    }
+
+    .trick-filter-option {
+        position: relative;
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 24px;
+        padding: 18px 0;
+    }
+
+    .trick-filter-option.active:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: #000;
     }
     
     .score-list {
@@ -168,11 +220,12 @@
         justify-content: flex-end;
     }
 
-    .run-checkbox {
+    .score-name {
         margin-right: auto;
+        text-transform: uppercase;
     }
 
-    .run-counter {
+    .score-counter {
         white-space: nowrap;
     }
 
