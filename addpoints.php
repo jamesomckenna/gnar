@@ -86,7 +86,7 @@
         </div>
 
         <?php foreach ($points_list['trick'] as $index => $trick_type): ?>
-          <div class="score-list trick-tab-content" id="content-trick-<?= $index; ?>" <?= $index == 'run' ? '' : 'style="display: none;"'; ?>>
+          <div class="score-list trick-tab-content" id="content-trick-<?= $index; ?>" <?= $index == 'air' ? '' : 'style="display: none;"'; ?>>
             <?php foreach ($trick_type as $score_row): ?>
               <div class="score-row" data-difficulty="<?= $score_row['difficulty']; ?>" data-id="<?= $score_row['id']; ?>"
                 data-points="<?= $score_row['points']; ?>">
