@@ -25,11 +25,11 @@
 
     <div class="uni-container">
       <div class="uni-filter">
-          <a class="score-filter-option orange"  href="#name">Name</a>
-          <a class="score-filter-option green"  href="#topscore">Top Score</a>
-          <a class="score-filter-option blue"  href="#mostruns">Most Runs</a>
-          <a class="score-filter-option black"  href="#distance">Distance</a>
-          <a class="score-filter-option red"  href="#topspeed">Top Speed</a>
+          <a class="difficulty-filter orange"  href="#name">Name</a>
+          <a class="difficulty-filter green"  href="#topscore">Top Score</a>
+          <a class="difficulty-filter blue"  href="#mostruns">Most Runs</a>
+          <a class="difficulty-filter black"  href="#distance">Distance</a>
+          <a class="difficulty-filter red"  href="#topspeed">Top Speed</a>
 
       </div>
     <?php
