@@ -16,11 +16,11 @@
     </div>
 
     <div class="cat-tab-container">
-      <a class="cat-tab active" href="javascript:;" data-content-id="content-run"></a>Runs</a>
-      <a class="cat-tab" href="javascript:;" data-content-id="run">Tricks</a>
-      <a class="cat-tab" href="javascript:;" data-content-id="run">ECP's</a>
-      <a class="cat-tab" href="javascript:;" data-content-id="deductions">Deductions</a>
-      <a class="cat-tab" href="javascript:;" data-content-id="total">Total</a>
+      <a class="cat-tab active" href="javascript:;" data-content-id="content-run">Runs</a>
+      <a class="cat-tab" href="javascript:;" data-content-id="content-tricks">Tricks</a>
+      <a class="cat-tab" href="javascript:;" data-content-id="content-ecp">ECP's</a>
+      <a class="cat-tab" href="javascript:;" data-content-id="content-deductions">Deductions</a>
+      <a class="cat-tab" href="javascript:;" data-content-id="content-total">Total</a>
     </div>
 
 
@@ -77,7 +77,7 @@
         </div>
       </div>
 
-      <div class="cat-content" id="content-tricks">
+      <div class="cat-content" id="content-tricks" style="display: none;">
         <div class="score-filter">
           <a class="score-filter-option orange" href="#all">All</a>
           <a class="score-filter-option green" href="#beginner">Beginner</a>
