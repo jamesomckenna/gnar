@@ -33,12 +33,12 @@
       <a class="cat-tab" href="javascript:;" data-content-id="content-trick">Tricks</a>
       <a class="cat-tab" href="javascript:;" data-content-id="content-ecp">ECP's</a>
       <a class="cat-tab" href="javascript:;" data-content-id="content-deduction">Deductions</a>
-      <a class="cat-tab" href="javascript:;" data-content-id="content-total">Total</a>
+      <a class="cat-tab" href="javascript:;" data-content-id="content-total" id="tab-total-link">Total</a>
     </div>
 
 
     <div class="cat-content-container">
-      <div class="cat-content" id="content-run">
+      <div class="cat-content" id="content-run" data-name="run" data-label="Runs">
         <div class="difficulty-filter-container">
           <a class="difficulty-filter orange" href="javascript:;" data-difficulty-id="all">All</a>
           <a class="difficulty-filter green" href="javascript:;" data-difficulty-id="beginner">Beginner</a>
@@ -49,7 +49,7 @@
         <div class="score-list">
           <?php foreach ($points_list['run'] as $score_row): ?>
             <div class="score-row" data-difficulty="<?= $score_row['difficulty']; ?>" data-id="<?= $score_row['id']; ?>"
-              data-points="<?= $score_row['points']; ?>">
+              data-points="<?= $score_row['points']; ?>" data-name="<?= $score_row['name']; ?>" data-value="0">
               <div class="score-name">
                 <?= $score_row['name']; ?>
               </div>
@@ -61,7 +61,7 @@
               </div>
               <div class="score-counter">
                 <a class="counter-btn js-counter-add" href="javascript:;">+</a>
-                <div class="counter-value js-counter-value" data-value="1">0</div>
+                <div class="counter-value js-counter-value">0</div>
                 <a class="counter-btn js-counter-sub" href="javascript:;">-</a>
               </div>
             </div>
@@ -69,7 +69,7 @@
         </div>
       </div>
 
-      <div class="cat-content" id="content-trick" style="display: none;">
+      <div class="cat-content" id="content-trick" data-name="trick" data-label="Tricks" style="display: none;">
         <div class="difficulty-filter-container">
           <a class="difficulty-filter orange" href="javascript:;" data-difficulty-id="all">All</a>
           <a class="difficulty-filter green" href="javascript:;" data-difficulty-id="beginner">Beginner</a>
@@ -89,7 +89,7 @@
           <div class="score-list trick-tab-content" id="content-trick-<?= $index; ?>" <?= $index == 'air' ? '' : 'style="display: none;"'; ?>>
             <?php foreach ($trick_type as $score_row): ?>
               <div class="score-row" data-difficulty="<?= $score_row['difficulty']; ?>" data-id="<?= $score_row['id']; ?>"
-                data-points="<?= $score_row['points']; ?>">
+                data-points="<?= $score_row['points']; ?>" data-name="<?= $score_row['name']; ?>" data-value="0">
                 <div class="score-name">
                   <?= $score_row['name']; ?>
                 </div>
@@ -101,7 +101,7 @@
                 </div>
                 <div class="score-counter">
                   <a class="counter-btn js-counter-add" href="javascript:;">+</a>
-                  <div class="counter-value js-counter-value" data-value="1">0</div>
+                  <div class="counter-value js-counter-value">0</div>
                   <a class="counter-btn js-counter-sub" href="javascript:;">-</a>
                 </div>
               </div>
@@ -110,7 +110,7 @@
         <?php endforeach; ?>
       </div>
 
-      <div class="cat-content" id="content-ecp" style="display: none;">
+      <div class="cat-content" id="content-ecp" data-name="ecp" data-label="ECPs" style="display: none;">
         <!-- <div class="difficulty-filter-container">
           <a class="difficulty-filter orange" href="javascript:;" data-difficulty-id="all">All</a>
           <a class="difficulty-filter green" href="javascript:;" data-difficulty-id="beginner">Beginner</a>
@@ -122,7 +122,7 @@
         <div class="score-list">
           <?php foreach ($points_list['ecp'] as $score_row): ?>
             <div class="score-row" data-difficulty="<?= $score_row['difficulty']; ?>" data-id="<?= $score_row['id']; ?>"
-              data-points="<?= $score_row['points']; ?>">
+              data-points="<?= $score_row['points']; ?>" data-name="<?= $score_row['name']; ?>" data-value="0">
               <div class="score-name">
                 <?= $score_row['name']; ?>
               </div>
@@ -134,7 +134,7 @@
               </div>
               <div class="score-counter">
                 <a class="counter-btn js-counter-add" href="javascript:;">+</a>
-                <div class="counter-value js-counter-value" data-value="1">0</div>
+                <div class="counter-value js-counter-value">0</div>
                 <a class="counter-btn js-counter-sub" href="javascript:;">-</a>
               </div>
             </div>
@@ -142,11 +142,12 @@
         </div>
       </div>
 
-      <div class="cat-content" id="content-deduction" style="display: none;">
+      <div class="cat-content" id="content-deduction" data-name="deduction" data-label="Deductions"
+        style="display: none;">
         <div class="score-list">
           <?php foreach ($points_list['deduction'] as $score_row): ?>
             <div class="score-row" data-difficulty="<?= $score_row['difficulty']; ?>" data-id="<?= $score_row['id']; ?>"
-              data-points="<?= $score_row['points']; ?>">
+              data-points="<?= $score_row['points']; ?>" data-name="<?= $score_row['name']; ?>" data-value="0">
               <div class="score-name">
                 <?= $score_row['name']; ?>
               </div>
@@ -158,7 +159,7 @@
               </div>
               <div class="score-counter">
                 <a class="counter-btn js-counter-add" href="javascript:;">+</a>
-                <div class="counter-value js-counter-value" data-value="1">0</div>
+                <div class="counter-value js-counter-value">0</div>
                 <a class="counter-btn js-counter-sub" href="javascript:;">-</a>
               </div>
             </div>
@@ -166,8 +167,16 @@
         </div>
       </div>
 
-      <div class="cat-content" id="content-total" style="display: none;">
-        TODO - Total page
+      <div class="cat-content" id="content-total" data-cat-name="total" data-cat-label="Total" style="display: none;">
+        <div class="list-score" id="list-score">
+
+        </div>
+        <div class="total-score" id="total-score">
+          
+        </div>
+        <div class="submit-score">
+          <a href="javascript:;" id="submit-score">Submit</a>
+        </div>
       </div>
     </div>
   </div>
