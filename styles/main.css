@@ -5,8 +5,19 @@
         background-color: #ffffff;
         color: #000000;
         min-height: 100lvh;
-        padding: 24px;
+        /* padding: 24px; */
+        padding: .5%;
         overflow-x: auto;
+    }
+
+    h1 {
+        color: #F90215;
+        font-family: 'Archivo Black', sans-serif;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: clamp(35px, 10vw, 80px);
+       
     }
 
     h3 {
@@ -14,7 +25,8 @@
         font-family: 'Archivo Black', sans-serif;
         text-transform: capitalize;
         margin: 0;
-        text-align: left;
+        text-align: center;
+        padding: 1%;
     }   
     
     p {
@@ -22,13 +34,14 @@
         font-family: 'Montserrat', sans-serif;
         margin: 0;
         text-align: left;
+        padding:  1%;
     }
     
     
     a {
         color:#000000;
         font-family: 'Francois One', sans-serif;
-        font-size: 24px;
+        font-size: (12px, 6.4vw, 24px);
         text-transform: uppercase;
         text-decoration: none;
     }
@@ -41,7 +54,7 @@
         margin: 0;
         text-align: center;
         text-transform: uppercase;
-        font-size: 80px;
+        font-size: clamp(35px ,10vw, 80px); /*80*/
     }
     .logo{
         position: absolute;
@@ -78,7 +91,8 @@
   
     /******* Index ******/
     .index-button-container {
-        padding: 36px 44px;
+        /* padding: 36px 44px; */
+        padding: 5% 1%;
         border: 10px solid #a1a1a1;
         border-radius: 40px;
         margin: auto;
@@ -87,7 +101,7 @@
     .nav-buttons-index {
         color: #ffffff;
         font-family: 'Francois One', sans-serif;
-        font-size: 24px;
+        font-size: clamp(12px, 6.400vw, 24px );
         padding: 8px 37px;
         border-radius: 25px;
         filter: drop-shadow(0 4px 4px #b1b1b1);
@@ -129,7 +143,7 @@
         position: relative;
         color: #4d4d4d;
         font-family: 'Archivo Black', sans-serif;
-        font-size: 36px;
+        font-size: clamp(12px, 9.6vw, 36px);
         padding: 18px 0;
     }
 
@@ -144,14 +158,15 @@
     }
     
     .cat-content {
-        padding: 36px 34px;
+        /* padding: 36px 34px; */
+        padding: 5% 4.8%;
         border: 10px solid #a1a1a1;
         border-radius: 40px;
     }
     
     .difficulty-filter-container {
         display: flex;
-        justify-content: center;
+        justify-content: left;
         column-gap: 20px;
         padding-bottom: 10px;
         margin-bottom: 50px;
@@ -160,7 +175,7 @@
     
     .difficulty-filter {
         font-family: 'Francois One', sans-serif;
-        font-size: 24px;
+        font-size: clamp(12px, 6.400vw, 24px );
         padding: 8px 37px;
         color: #ffffff;
         background-color: #F36523;
@@ -174,6 +189,7 @@
         justify-content: space-between;
         margin-bottom: 50px;
         overflow-x: auto;
+       
     }
 
     .trick-tab-container:before {
@@ -184,14 +200,17 @@
         width: 100%;
         height: 1px;
         background-color: #999999;
+        
     }
 
     .trick-tab {
         position: relative;
         font-family: 'Archivo Black', sans-serif;
-        font-size: 24px;
+        font-size: clamp(12px, 6.400vw, 24px );
         padding: 18px 0;
+        margin-left: 10px;
     }
+    
 
     .trick-tab.active:after {
         content: '';
@@ -206,7 +225,8 @@
     .score-list {
         display: flex;
         flex-wrap: wrap;
-        row-gap: 18px;
+        /* row-gap: 18px; */
+        row-gap: 30px;
     }
     
     .score-row {
@@ -214,10 +234,10 @@
         display: flex;
         flex-wrap: wrap;
         font-family: 'Archivo Black', sans-serif;
-        font-size: 24px;
+        font-size: clamp(24px, 5vw, 24px );
         column-gap: 20px;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: flex-start;
     }
 
     .score-name {
@@ -235,6 +255,7 @@
         background: #D9D9D9;
         border-radius: 50px;
         padding: 3px 15px;
+    
     }
 
     .counter-value {
@@ -251,14 +272,7 @@
 
     /******* How to play *******/
 
-    h1 {
-        color: #F90215;
-        font-family: 'Archivo Black', sans-serif;
-        margin: 0;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 80px;
-    }
+
 
     .li-htp {
         font-family: 'Montserrat', sans-serif;
@@ -274,7 +288,7 @@
     .htp-h2 {
         font-family: 'Archivo Black', sans-serif;
         text-transform: capitalize;
-        font-size: 36px;
+        font-size: clamp(12px, 9.6vw, 36px);
         color: #F21717;
         text-align: center;
     }
@@ -283,9 +297,18 @@
      
     .lb-buttons a{
         font-family: 'Francois One', sans-serif;
-        font-size: 24px;
+        font-size: clamp(12px, 6.400vw, 24px );
         padding: 8px 37px;
         border-radius: 25px;
         filter: drop-shadow(0 4px 4px #b1b1b1);
     }
     
+    @media screen and (max-width:800px){
+        .score-name {
+            
+            width:100%;
+        }
+        .score-row{
+            justify-content: flex-end;
+        }
+    }

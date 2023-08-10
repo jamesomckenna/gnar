@@ -9,7 +9,7 @@
 <body>
   <div class="shell">
     <div class="header">
-      <a href="index.php"><img scr="images/Russ_red_logo.png" alt="Russ logo home" height=100px width=100px></a>
+      <a href="index.php"><img src="images/Russ_red_logo.png" alt="Russ logo home" height=100px width=100px></a>
       <h1>How To Play</h1>
     </div>
     

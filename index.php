@@ -28,7 +28,7 @@
                 
                 <a class="nav-buttons-index red"  href="addpoints.php">Add Points</a>
                 
-                  <!-- <a h`ref="signin.php">Sign In</a> -->
+                  <a class="nav-buttons-index"href="signin.php">Sign In</a>
               </div>
         </div>
 

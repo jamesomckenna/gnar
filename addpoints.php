@@ -22,7 +22,7 @@
 
   <div class="shell">
     <div class="header">
-      <a href="index.php"><img scr="images/Russ_red_logo.png" alt="Russ logo home" height=100px width=100px></a>
+      <a href="index.php"><img src="images/Russ_red_logo.png" alt="Russ logo home" height=100px width=100px></a>
       <h1>GNAR - Scoring</h1>
       <a href="../">Back</a>
       <a href="index.php">Home</a>
@@ -36,7 +36,7 @@
       <a class="cat-tab" href="javascript:;" data-content-id="content-total">Total</a>
     </div>
 
-
+    <!-- runs -->
     <div class="cat-content-container">
       <div class="cat-content" id="content-run">
         <div class="difficulty-filter-container">
@@ -61,7 +61,7 @@
               </div>
               <div class="score-counter">
                 <a class="counter-btn js-counter-add" href="javascript:;">+</a>
-                <div class="counter-value js-counter-value" data-value="1">0</div>
+                <div class="counter-value js-counter-value" data-value="0-">0</div>
                 <a class="counter-btn js-counter-sub" href="javascript:;">-</a>
               </div>
             </div>
@@ -69,6 +69,8 @@
         </div>
       </div>
 
+
+      <!-- tricks -->
       <div class="cat-content" id="content-trick" style="display: none;">
         <div class="difficulty-filter-container">
           <a class="difficulty-filter orange" href="javascript:;" data-difficulty-id="all">All</a>
@@ -84,7 +86,7 @@
           <a class="trick-tab" href="javascript:;" data-content-id="content-trick-box_rail">Rail/Box</a>
           <a class="trick-tab" href="javascript:;" data-content-id="content-trick-flat_knuckle">Flat/Knuckle</a>
         </div>
-
+        
         <?php foreach ($points_list['trick'] as $index => $trick_type): ?>
           <div class="score-list trick-tab-content" id="content-trick-<?= $index; ?>" <?= $index == 'air' ? '' : 'style="display: none;"'; ?>>
             <?php foreach ($trick_type as $score_row): ?>
@@ -101,7 +103,7 @@
                 </div>
                 <div class="score-counter">
                   <a class="counter-btn js-counter-add" href="javascript:;">+</a>
-                  <div class="counter-value js-counter-value" data-value="1">0</div>
+                  <div class="counter-value js-counter-value" data-value="0">0</div>
                   <a class="counter-btn js-counter-sub" href="javascript:;">-</a>
                 </div>
               </div>
@@ -118,7 +120,8 @@
           <a class="difficulty-filter black" href="javascript:;" data-difficulty-id="expert">Expert</a>
           <a class="difficulty-filter black" href="javascript:;" data-difficulty-id="extreme">Extreme</a>
         </div> -->
-
+        
+        <!-- ECP's -->
         <div class="score-list">
           <?php foreach ($points_list['ecp'] as $score_row): ?>
             <div class="score-row" data-difficulty="<?= $score_row['difficulty']; ?>" data-id="<?= $score_row['id']; ?>"
@@ -134,7 +137,7 @@
               </div>
               <div class="score-counter">
                 <a class="counter-btn js-counter-add" href="javascript:;">+</a>
-                <div class="counter-value js-counter-value" data-value="1">0</div>
+                <div class="counter-value js-counter-value" data-value="0">0</div>
                 <a class="counter-btn js-counter-sub" href="javascript:;">-</a>
               </div>
             </div>
@@ -142,6 +145,7 @@
         </div>
       </div>
 
+      <!-- Deductions -->
       <div class="cat-content" id="content-deduction" style="display: none;">
         <div class="score-list">
           <?php foreach ($points_list['deduction'] as $score_row): ?>
@@ -158,7 +162,7 @@
               </div>
               <div class="score-counter">
                 <a class="counter-btn js-counter-add" href="javascript:;">+</a>
-                <div class="counter-value js-counter-value" data-value="1">0</div>
+                <div class="counter-value js-counter-value" data-value="0">0</div>
                 <a class="counter-btn js-counter-sub" href="javascript:;">-</a>
               </div>
             </div>

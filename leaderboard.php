@@ -11,17 +11,17 @@
 
     
     <div>
-        <a href="index.php"><img scr=".images/RUSS logo red.png" alt="Russ logo home" height=100px width=100px></a>
+        <a href="index.php"><img src="images/RUSS logo red.png" alt="Russ logo home" height=100px width=100px></a>
         <h1 class="header">Leaderboard</h1>
-        <a href="../">Back</a>
+        <!-- <a href="../">Back</a> -->
     </div>
 
-    <div class="tab-header-container">
+    <!-- <div class="tab-header-container">
       <a class="tab-header" href="#topscore">Top Score</a>
       <a class="tab-header" href="#mostruns">Most runs</a>
       <a class="tab-header" href="#distance">Distance</a>
       <a class="tab-header" href="#topspeed">Top Speed</a>
-    </div>
+    </div> -->
 
     <div class="uni-container">
       <div class="uni-filter">
