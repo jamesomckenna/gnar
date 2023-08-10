@@ -293,6 +293,11 @@
         text-align: center;
     }
 
+    .description{
+        margin-right: auto;
+        width:100%;
+    }
+
     /***** Leaderboard ******/
      
     .lb-buttons a{

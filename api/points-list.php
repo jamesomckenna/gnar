@@ -41,6 +41,7 @@ function queryPointsListCategory($category) {
         'name' => $obj->Name,
         'difficulty' => $obj->Difficulty,
         'points' => $obj->Points,
+        // 'description' => $obj->Description,
         'category' => $obj->Category,
         'score_limit' => $obj->ScoreLimit,
       );
