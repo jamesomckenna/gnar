@@ -26,13 +26,17 @@
             <input type="text" id="inp-name" name="inp-name">
           </section>
 
-          <section class="submission">
-            <input type="submit" value="Submit">
-          </section>
-        </form>
-      </div>
-    </div>
-  </div>
-</body>
+                <section class="submission">
+                    <input type="submit" value="Submit">
+                </section>
+              </form>
+                
+              </div>
+        </div>
 
+          
+      <footer>
+
+      </footer>
+    </body>
 </html>

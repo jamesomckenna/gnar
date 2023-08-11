@@ -90,4 +90,8 @@ function queryPointsTrickList($tricktype) {
   return $points_array;
 }
 
+function queryLoginSucess(){
+    
+
+}
 ?>

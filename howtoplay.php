@@ -48,8 +48,8 @@
           <li class="li-htp">Example 2. <br>You're bombing it down last hoot and dont want to stack it on the mogul's at the bottom so you duck onto Wombats Ramble.
           Even though you've done both Wombats Ramble and Last Hoot only last hoot would score points!!</li></ul>
         <p>Please check the full list of runs that can score you points: <a class="htp-a" href="pointslist.php">here</a></p><br><br>
-        <img src="images\Map_1.PNG" alt="Map of Drovers & Hwy 83"width="360" height="360">
-        <img src="images/Map 2.PNG" alt="Map of Wombats Ramble & Last Hoot"width="360" height="360">
+        <!-- <img src="images\Map_1.PNG" alt="Map of Drovers & Hwy 83"width="35.156vw" height="35.156vw">
+        <img src="images/Map 2.PNG" alt="Map of Wombats Ramble & Last Hoot"width="clamp(150px,35.156vw,360px)" height="clamp(150px,35.156vw,)"> -->
 
       <h3>Tricks</h3>
         <p>Tricks are a great way to earn those precious points while making you look steezy at the same time. 
@@ -73,6 +73,8 @@
           Others such as Happy Chair, Pro Callout and The Rizzler can be attempted as many times as you can!! 
           <br>The list of ECP's can be found <a class="htp-a" href="pointslist.php">here</a>
           Read the challages and scheme cunningly!!
+          <br> For falling head over heals weekend all ECPS with video evidence will provide double points (will be updated later) <!---REMOVE THIS WHEN PHOTO DROP SYSTEM IMPLEMENTED --->
+          <br> Please send all photos to marlon or Tim when submitting   <!---REMOVE THIS WHEN PHOTO DROP SYSTEM IMPLEMENTED --->
           <br>Please see bigbird for any clarification regarding ECP's
         </p>
       <h3>Deductions</h3>

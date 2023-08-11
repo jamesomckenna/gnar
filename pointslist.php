@@ -23,8 +23,6 @@
     <div class="header">
       <a href="index.php"><img src="images/Russ_red_logo.png" alt="Russ logo home" height=100px width=100px></a>
       <h1>GNAR - Scoring</h1>
-      <a href="../">Back</a>
-      <a href="index.php">Home</a>
     </div>
 
     <div class="cat-tab-container">
@@ -32,7 +30,7 @@
       <a class="cat-tab" href="javascript:;" data-content-id="content-trick">Tricks</a>
       <a class="cat-tab" href="javascript:;" data-content-id="content-ecp">ECP's</a>
       <a class="cat-tab" href="javascript:;" data-content-id="content-deduction">Deductions</a>
-      <a class="cat-tab" href="javascript:;" data-content-id="content-total" id="tab-total-link">Total</a>
+      
     </div>
 
     <!-- runs -->
@@ -59,7 +57,9 @@
                 <?= $score_row['points']; ?>pts
               </div>
               <div class="Description">
-                <?= $score_row['description']; ?>description
+                <p>
+                <?= $score_row['description']; ?>
+                </p>
               </div>
             </div>
           <?php endforeach; ?>
@@ -96,9 +96,9 @@
                 <div class="score-points">
                   <?= $score_row['points']; ?>pts
                 </div>
-                <div class="Description">
-                  <?= $score_row['description']; ?>description
-                </div>
+                <!-- <div class="Description">
+                  <//?= $score_row['description']; ?>
+                </div> -->
               </div>
             <?php endforeach; ?>
           </div>
@@ -128,8 +128,8 @@
               <div class="score-points">
                 <?= $score_row['points']; ?>pts
               </div>
-              <div class="Description">
-                <?= $score_row['description']; ?>description
+              <div class="description">
+                <?= $score_row['description']; ?>
               </div>
             </div>
           <?php endforeach; ?>
@@ -151,8 +151,8 @@
               <div class="score-points">
                 <?= $score_row['points']; ?>pts
               </div>
-              <div class="Description">
-                <?= $score_row['description']; ?>description
+              <div class="description">
+                <?= $score_row['description']; ?>
               </div>
             </div>
           <?php endforeach; ?>
