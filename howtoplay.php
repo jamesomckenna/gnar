@@ -86,10 +86,6 @@
         <br>For a complete list of Deductions check <a class="htp-a" href="pointslist.php">here</a> </p>
       <h></h>
       </div>
-    <footer>
-    <a class="htp-a" href="index.php">home</a> 
-    <a class="htp-a" href="../">Back</a>
-    </footer>
   </div>
 </body>
 

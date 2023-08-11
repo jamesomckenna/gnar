@@ -1,8 +1,6 @@
 window.addEventListener("load", (event) => {
     console.log('Load Complete');
 
-
-
     /******* TABS *******/
 
     let tab_cat_links = document.getElementsByClassName("cat-tab");
@@ -35,8 +33,6 @@ window.addEventListener("load", (event) => {
     /******* SCORING *******/
 
     if (document.getElementById("page-add-points")) {
-        console.log('Add points page loaded');
-
         let div_score_rows = document.getElementsByClassName("score-row");
         let tab_trick_links = document.getElementsByClassName("trick-tab");
         let tab_trick_contents = document.getElementsByClassName("trick-tab-content");

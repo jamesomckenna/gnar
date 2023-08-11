@@ -24,8 +24,6 @@
     <div class="header">
       <a href="index.php"><img src="images/Russ_red_logo.png" alt="Russ logo home" height=100px width=100px></a>
       <h1>GNAR - Scoring</h1>
-      <a href="../">Back</a>
-      <a href="index.php">Home</a>
     </div>
 
     <div class="cat-tab-container">

@@ -45,9 +45,4 @@
   </div>
 </body>
 
-<footer>
-  <!-- <a href="index.php">Home</a>
-  <a href="../">Back</a> -->
-</footer>
-
 </html>
