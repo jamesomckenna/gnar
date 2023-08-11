@@ -4,7 +4,7 @@
     <head>
 
       <title>GNAR X RUSS - Gafney's Numerical Assessment of Radness.</title>
-      <?php require('templates/header.php'); ?>
+      <?php require(dirname(__FILE__).'/templates/header.php'); ?>
       <meta charset="UTF-8" />
       <title>GNAR</title>
       <link rel="icon" type="image/x-icon" href="images/Russ_red_logo.png" />

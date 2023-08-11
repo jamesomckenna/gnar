@@ -2,13 +2,13 @@
 <html>
 <header>
   <title>GNAR</title>
-  <?php require('templates/header.php'); ?>
+  <?php require(dirname(__FILE__).'/templates/header.php'); ?>
 </header>
 
-<body id="add-points">
+<body id="page-add-points">
 
   <?php
-  require('api/points-list.php');
+  require(dirname(__FILE__).'/api/points-list.php');
   $points_list = getPointsList();
 
   $difficulty_icons = array(

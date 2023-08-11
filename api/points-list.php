@@ -1,5 +1,5 @@
 <?php
-require('templates/db_conn.php');
+require(dirname(__FILE__).'/../templates/db_conn.php');
 global $mysqli;
 
 // Check connection

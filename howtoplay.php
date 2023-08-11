@@ -3,7 +3,7 @@
 
 <head>
   <title>GNAR</title>
-  <?php require('templates/header.php'); ?>
+  <?php require(dirname(__FILE__).'/templates/header.php'); ?>
 </head>
 
 <body>

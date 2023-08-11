@@ -34,7 +34,7 @@ window.addEventListener("load", (event) => {
 
     /******* SCORING *******/
 
-    if (document.getElementById("add-points")) {
+    if (document.getElementById("page-add-points")) {
         console.log('Add points page loaded');
 
         let div_score_rows = document.getElementsByClassName("score-row");
@@ -129,6 +129,7 @@ window.addEventListener("load", (event) => {
 
         // Display total score
         tab_total_link.addEventListener("click", (event) => {
+            event.preventDefault();
             let total_obj = calculateTotalScore();
 
             categorised_scores = {};
@@ -147,6 +148,7 @@ window.addEventListener("load", (event) => {
 
         // Display total score
         submit_score.addEventListener("click", async (event) => {
+            event.preventDefault();
             let total_obj = calculateTotalScore();
             let url = "api/save-score.php";
 
@@ -158,9 +160,14 @@ window.addEventListener("load", (event) => {
                 body: JSON.stringify(total_obj),
             });
             if (response.status === 200) {
-                console.log(await response.json());
+                let data = await response.json()
+                if(data.success){
+                    window.location.href = "leaderboard.php";
+                } else {
+                    alert('Error: '+data.message);
+                }
             } else {
-                console.log("error");
+                alert('Error Code: '+response.status);
             }
 
         });
@@ -197,5 +204,45 @@ window.addEventListener("load", (event) => {
             }
         }
 
+    }
+
+
+    if (document.getElementById("page-signin")) {
+        let form_login = document.getElementById("form-signin");
+        let inp_name = document.getElementById("inp-name");
+
+        form_login.addEventListener('submit', async function(event) {
+            event.preventDefault();
+
+            let username = inp_name.value;
+            let url = "api/login.php";
+            let data = {
+                'name': username
+            }
+
+            if(username.length == 0){
+                alert('Please enter your full name.');
+                return;
+            }
+            
+            const response = await fetch(url, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+            });
+
+            if (response.status === 200) {
+                let data = await response.json()
+                if(data.success){
+                    window.location.href = "index.php";
+                } else {
+                    alert('Error: '+data.message);
+                }
+            } else {
+                alert('Error Code: '+response.status);
+            }
+        })
     }
 });
