@@ -1,4 +1,7 @@
 <?php
+require('../templates/db_conn.php');
+global $mysqli;
+
 $data_json = file_get_contents('php://input');
 $data = json_decode($data_json);
 
@@ -9,10 +12,6 @@ if (json_last_error() !== JSON_ERROR_NONE) {
 if (count($data->points_list) == 0) {
     exit();
 }
-
-require('../templates/db_conn.php');
-$mysqli = new mysqli($ip_address, $username, $password, $db_name);
-$mysqli->set_charset("utf8mb4");
 
 // Check connection
 if ($mysqli->connect_errno) {

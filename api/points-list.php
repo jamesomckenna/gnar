@@ -1,7 +1,6 @@
 <?php
-
 require('templates/db_conn.php');
-$mysqli = new mysqli($ip_address, $username, $password, $db_name);
+global $mysqli;
 
 // Check connection
 if ($mysqli->connect_errno) {
@@ -22,14 +21,12 @@ function getPointsList() {
 }
 
 
-
-
 function queryPointsListCategory($category) {
   global $mysqli;
   $points_array = array();
 
   // prepare, bind + exceute to prevent injection
-  $query = "SELECT `ID`, `Name`, `Difficulty`, `Points`, `Category`, `ScoreLimit` FROM `points_list` WHERE `Category` = ? ORDER BY `Name` ASC";
+  $query = "SELECT `ID`, `Name`, `Difficulty`, `Points`, `Category`, `ScoreLimit`, `Description` FROM `points_list` WHERE `Category` = ? ORDER BY `Name` ASC";
   $stmt = $mysqli->prepare($query);
   $stmt->bind_param('s', $category); // 's' specifies the variable type => 'string'
   $stmt->execute();
@@ -41,7 +38,7 @@ function queryPointsListCategory($category) {
         'name' => $obj->Name,
         'difficulty' => $obj->Difficulty,
         'points' => $obj->Points,
-        // 'description' => $obj->Description,
+        'description' => $obj->Description,
         'category' => $obj->Category,
         'score_limit' => $obj->ScoreLimit,
       );

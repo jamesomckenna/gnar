@@ -2,8 +2,7 @@
 echo "hello world, this RUSS GNAR is the scoreboard API test<br><br>";
 
 require('templates/db_conn.php');
-
-$mysqli = new mysqli($ip_address,$username,$password,$db_name);
+global $mysqli;
 
 // Check connection
 if ($mysqli -> connect_errno) {

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <header>
-    <title>GNAR</title>
-    <?php require('templates/header.php'); ?>
+  <title>GNAR</title>
+  <?php require('templates/header.php'); ?>
 </header>
+
 <body id="add-points">
 
   <?php
@@ -58,7 +59,7 @@
                 <?= $score_row['points']; ?>pts
               </div>
               <div class="Description">
-                <?= $score_row['Description']; ?>description
+                <?= $score_row['description']; ?>description
               </div>
             </div>
           <?php endforeach; ?>
@@ -80,7 +81,7 @@
           <a class="trick-tab" href="javascript:;" data-content-id="content-trick-box_rail">Rail/Box</a>
           <a class="trick-tab" href="javascript:;" data-content-id="content-trick-flat_knuckle">Flat/Knuckle</a>
         </div>
-        
+
         <?php foreach ($points_list['trick'] as $index => $trick_type): ?>
           <div class="score-list trick-tab-content" id="content-trick-<?= $index; ?>" <?= $index == 'air' ? '' : 'style="display: none;"'; ?>>
             <?php foreach ($trick_type as $score_row): ?>
@@ -94,6 +95,9 @@
                 <?php endif; ?>
                 <div class="score-points">
                   <?= $score_row['points']; ?>pts
+                </div>
+                <div class="Description">
+                  <?= $score_row['description']; ?>description
                 </div>
               </div>
             <?php endforeach; ?>
@@ -109,7 +113,7 @@
           <a class="difficulty-filter black" href="javascript:;" data-difficulty-id="expert">Expert</a>
           <a class="difficulty-filter black" href="javascript:;" data-difficulty-id="extreme">Extreme</a>
         </div> -->
-        
+
         <!-- ECP's -->
         <div class="score-list">
           <?php foreach ($points_list['ecp'] as $score_row): ?>
@@ -124,7 +128,9 @@
               <div class="score-points">
                 <?= $score_row['points']; ?>pts
               </div>
-
+              <div class="Description">
+                <?= $score_row['description']; ?>description
+              </div>
             </div>
           <?php endforeach; ?>
         </div>
@@ -145,12 +151,14 @@
               <div class="score-points">
                 <?= $score_row['points']; ?>pts
               </div>
-              
+              <div class="Description">
+                <?= $score_row['description']; ?>description
+              </div>
             </div>
           <?php endforeach; ?>
         </div>
       </div>
-      
+
     </div>
   </div>
 
@@ -160,4 +168,3 @@
 
 
 </html>
-
