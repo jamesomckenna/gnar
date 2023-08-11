@@ -23,12 +23,12 @@
 
               <form action="">
                 <section>
-                    <Label>Login</Label>
+                    <Label></Label>
                     <input type="text", id="login" name ="login">
                 </section>
 
                 <section class="submission">
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Login">
                 </section>
               </form>
                 
