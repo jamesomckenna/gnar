@@ -341,7 +341,17 @@ body {
         text-decoration: none;
         margin: 4px 2px;
         cursor: pointer;
-        display: flex;
+        display: block;
+        align-items: center;
         border-radius: 25px;
+      }
+
+      input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid red;
+        border-radius: 4px;
       }
     

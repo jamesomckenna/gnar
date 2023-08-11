@@ -19,6 +19,9 @@
 
         <div class="index-button-container">
               <div class="nav-button">
+                <?php if(!isset($_COOKIE['gnar_user'])): ?>          
+                  <a class="nav-buttons-index"href="signin.php">Sign In</a>
+                <?php endif; ?> 
                 
                 <a  class="nav-buttons-index orange"  href="howtoplay.php">How to play</a>
                 
@@ -26,9 +29,10 @@
                 
                 <a class="nav-buttons-index blue"  href="pointslist.php">Points Table</a>
                 
-                <a class="nav-buttons-index red"  href="addpoints.php">Add Points</a>
-                
-                <a class="nav-buttons-index"href="signin.php">Sign In</a>
+                <?php if(isset($_COOKIE['gnar_user'])): ?>          
+                  <a class="nav-buttons-index red"  href="addpoints.php">Add Points</a>
+                <?php endif; ?> 
+            
               </div>
         </div>
 
